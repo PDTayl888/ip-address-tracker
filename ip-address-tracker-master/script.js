@@ -15,7 +15,9 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var marker = L.marker([51.505, -0.09]).addTo(map);
 
 var myIcon = L.icon({
-    iconUrl: './images/icon-arrow.svg',
-    iconSize: [346, 356], 
+    iconUrl: './images/icon-location.svg',
+    iconSize: [46, 56], 
     iconAnchor: [23, 56], 
 });
+
+marker.setIcon(myIcon);
