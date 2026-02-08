@@ -15,6 +15,8 @@ body {
   text-align: center;
   position: relative;
   padding: .15rem;
+    box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.1);
+
 }
 
 #title {
@@ -87,6 +89,8 @@ h3 {
 
 #map {
     height: 70vh;
+    box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.1);
+
 }
 
 #error-overlay {
