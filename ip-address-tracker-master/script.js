@@ -25,8 +25,9 @@ marker.setIcon(myIcon);
 const searchButton = document.getElementById('search-button');
 const searchInput = document.getElementById('search-input');
 
-searchButton.addEventListener('click', () => {
-    const IP = searchInput.value;
+function updateUI(searchInput) {
+    const IP = searchInput;
+    console.log("ip Ip " + IP);
 
     console.log("SEARCH BUTTON CLICKED - " + IP);
     const url = `https://geo.ipify.org/api/v2/country,city?apiKey=at_KP6w8IL9oQP8yZacXg4P6tHyVCD4y&ipAddress=${IP}`;
@@ -45,9 +46,33 @@ searchButton.addEventListener('click', () => {
 
     })
     .catch(error => console.error("ENTER IP ADDRESS"));
-});
+};
 
 // FORM VALIDATION //
 
 const ipForm = document.getElementById('ip-form');
-const errorOverlay
+const errorOverlay = document.getElementById('error-overlay');
+const closeError = document.getElementById('close-error');
+
+closeError.addEventListener('click', () => {
+  errorOverlay.classList.add('hidden');
+});
+
+searchInput.addEventListener('input', () => {
+  errorOverlay.classList.add('hidden');
+});
+
+function isValidIP(ip) {
+  const pattern = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+  return pattern.test(ip);
+}
+
+ipForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    console.log("FORM SUBMITTTTTTTTEEEEDDDDDDD");
+
+    const data = new FormData(e.target);
+    const ipInput = data.get('ip-input');
+
+    updateUI(ipInput);
+})

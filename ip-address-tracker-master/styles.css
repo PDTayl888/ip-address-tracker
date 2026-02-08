@@ -51,3 +51,11 @@ body {
 #map {
     height: 180px;
 }
+
+#error-overlay {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.hidden {
+  display: none !important; 
+}
