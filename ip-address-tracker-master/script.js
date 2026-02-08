@@ -26,7 +26,13 @@ const searchButton = document.getElementById('search-button');
 const searchInput = document.getElementById('search-input');
 
 searchButton.addEventListener('click', () => {
-    const ip = searchInput.value;
+    const IP = searchInput.value;
 
-    console.log("SEARCH BUTTON CLICKED - " + ip);
+    console.log("SEARCH BUTTON CLICKED - " + IP);
+    const url = `https://geo.ipify.org/api/v2/country,city?apiKey=at_KP6w8IL9oQP8yZacXg4P6tHyVCD4y&ipAddress=${IP}`;
+    fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        console.log("FETCH TEST", data);
+    })
 })
