@@ -44,4 +44,10 @@ searchButton.addEventListener('click', () => {
 
 
     })
-})
+    .catch(error => console.error("ENTER IP ADDRESS"));
+});
+
+// FORM VALIDATION //
+
+const ipForm = document.getElementById('ip-form');
+const errorOverlay

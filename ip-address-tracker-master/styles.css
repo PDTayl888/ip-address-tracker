@@ -11,6 +11,7 @@ body {
   padding-top: 20px;
   position: relative;
 }
+
 .info-card {
   background: white;
   border-radius: 15px;
@@ -26,6 +27,7 @@ body {
   width: 80%;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
+
 .search-container {
   display: flex;
   justify-content: center;

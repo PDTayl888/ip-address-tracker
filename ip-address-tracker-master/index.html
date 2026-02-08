@@ -23,15 +23,25 @@
 </head>
 <body>
 
-  <header class="header-section">
+<header class="header-section">
   <h1>IP Address Tracker</h1>
+
+  <form id="ip-form" novalidate>
     <div class="search-container">
       <input type="text" id="search-input" placeholder="Search for any IP address or domain">
       <button id="search-button" class="search-button">
         <img src="./images/icon-arrow.svg" alt="Search">
       </button>
     </div>
-  
+  </form>
+
+  <div id="error-overlay" class="hidden">
+    <div class="error-content">
+      <p>ENTER VALID IP ADDRESS</p>
+    </div>
+  </div>
+</header>
+ 
     <section class="info-card">
       <div class="info-item">
         <p>IP ADDRESS</p>
@@ -57,14 +67,13 @@
   <section class="map-section">
     <div id="map"></div>
   </section>
-
 <!--
   IP Address
   Location
   Timezone
     UTC <!-- add offset value dynamically using the API -->
   ISP
-  </header>
+
 -->
   
   <div class="attribution">
