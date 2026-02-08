@@ -21,3 +21,12 @@ var myIcon = L.icon({
 });
 
 marker.setIcon(myIcon);
+
+const searchButton = document.getElementById('search-button');
+const searchInput = document.getElementById('search-input');
+
+searchButton.addEventListener('click', () => {
+    const ip = searchInput.value;
+
+    console.log("SEARCH BUTTON CLICKED - " + ip);
+})
