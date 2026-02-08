@@ -94,7 +94,11 @@ h3 {
 }
 
 #error-overlay {
+  color: red;
   transition: opacity 0.2s ease-in-out;
+  font-size: 1rem;
+  font-weight: bold;
+  z-index: 2000;
 }
 
 .hidden {
@@ -150,5 +154,12 @@ h3 {
   #title {
     font-size: 1rem;
   }
+
+  #error-overlay {
+    transition: opacity 0.2s ease-in-out;
+    font-size: 1rem;
+    z-index: 2000;
+  }
+
 
 }

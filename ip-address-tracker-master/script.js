@@ -52,11 +52,7 @@ function updateUI(searchInput = '') {
 
 const ipForm = document.getElementById('ip-form');
 const errorOverlay = document.getElementById('error-overlay');
-const closeError = document.getElementById('close-error');
 
-closeError.addEventListener('click', () => {
-  errorOverlay.classList.add('hidden');
-});
 
 searchInput.addEventListener('input', () => {
   errorOverlay.classList.add('hidden');
