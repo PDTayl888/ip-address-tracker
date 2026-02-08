@@ -23,12 +23,10 @@
 </head>
 <body>
 
-<header class="header-section">
-
-  <div class="search-container">
+<header class="header-section">  
   <h1 id="title">IP Address Tracker</h1>
   <form id="ip-form" novalidate>
-    <div class="nothin">
+    <div class="search-container">
       <input type="text" id="search-input" name="ip-input" placeholder="Search for any IP address or domain">
       <button id="search-button" class="search-button">
         <img src="./images/icon-arrow.svg" alt="Search">
@@ -36,8 +34,6 @@
     </div>
   </form>
 
-
-  </div>
   <div id="error-overlay" class="hidden">
     <div class="error-content">
       <p>ENTER VALID IP ADDRESS</p>
@@ -45,33 +41,33 @@
     </div>
   </div>
 </header>
+
  
-  <section class="info-card">
-      <div class="info-item">
-        <p>IP ADDRESS</p>
-        <h3 id="ip-display">192.212.174.101</h3>
-      </div>
+<section class="info-card">
+    <div class="info-item">
+      <p>IP ADDRESS</p>
+      <h3 id="ip-display">192.212.174.101</h3>
+    </div>
 
-      <div class="info- item">
-        <p>Location</p>
-        <h3 id="location-display">Brooklyn,</h3>
-        <h3 id="location-display-too">NY 10032</h3>
-      </div>
+    <div class="info- item">
+      <p>Location</p>
+      <h3 id="location-display">Brooklyn,</h3>
+    </div>
 
-      <div class="info-item">
-        <p>Timezone</p>
-        <h3 id="timezone-display">UTC -05;00</h3>
-      </div>
+    <div class="info-item">
+      <p>Timezone</p>
+      <h3 id="timezone-display">UTC -05;00</h3>
+    </div>
 
-      <div class="info-item-last">
-        <p>ISP</p>
-        <h3 id="isp-display">SpaceX Starlink</h3>
-      </div>
-  </section>
+    <div class="info-item">
+      <p>ISP</p>
+      <h3 id="isp-display">SpaceX Starlink</h3>
+    </div>
+</section>
   
-  <section class="map-section">
-    <div id="map"></div>
-  </section>
+<section class="map-section">
+  <div id="map"></div>
+</section>
 
   
   <div class="attribution">

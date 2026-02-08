@@ -36,8 +36,7 @@ function updateUI(searchInput = '') {
     .then(data => {
         console.log("FETCH TEST", data.location);
         document.getElementById('ip-display').innerText = data.ip;
-        document.getElementById('location-display').innerText = `${data.location.city}`;
-        document.getElementById('location-display-too').innerText = `${data.location.region}, ${data.location.postalCode}`;
+        document.getElementById('location-display').innerText = `${data.location.city}, ${data.location.region}, ${data.location.postalCode}`;
         document.getElementById('timezone-display').innerText = `UTC ${data.location.timezone}`;
         document.getElementById('isp-display').innerText = data.isp;
 
