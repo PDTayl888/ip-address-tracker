@@ -25,7 +25,7 @@ marker.setIcon(myIcon);
 const searchButton = document.getElementById('search-button');
 const searchInput = document.getElementById('search-input');
 
-function updateUI(searchInput) {
+function updateUI(searchInput = '') {
     const IP = searchInput;
     console.log("ip Ip " + IP);
 
