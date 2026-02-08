@@ -24,10 +24,11 @@
 <body>
 
 <header class="header-section">
-  <h1>IP Address Tracker</h1>
 
+  <div class="search-container">
+  <h1 id="title">IP Address Tracker</h1>
   <form id="ip-form" novalidate>
-    <div class="search-container">
+    <div class="nothin">
       <input type="text" id="search-input" name="ip-input" placeholder="Search for any IP address or domain">
       <button id="search-button" class="search-button">
         <img src="./images/icon-arrow.svg" alt="Search">
@@ -35,6 +36,8 @@
     </div>
   </form>
 
+
+  </div>
   <div id="error-overlay" class="hidden">
     <div class="error-content">
       <p>ENTER VALID IP ADDRESS</p>
@@ -51,7 +54,8 @@
 
       <div class="info- item">
         <p>Location</p>
-        <h3 id="location-display">Brooklyn, NY 10001</h3>
+        <h3 id="location-display">Brooklyn,</h3>
+        <h3 id="location-display-too">NY 10032</h3>
       </div>
 
       <div class="info-item">
@@ -59,7 +63,7 @@
         <h3 id="timezone-display">UTC -05;00</h3>
       </div>
 
-      <div class="info-item">
+      <div class="info-item-last">
         <p>ISP</p>
         <h3 id="isp-display">SpaceX Starlink</h3>
       </div>
@@ -68,14 +72,7 @@
   <section class="map-section">
     <div id="map"></div>
   </section>
-<!--
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
 
--->
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
