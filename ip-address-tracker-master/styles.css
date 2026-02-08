@@ -121,7 +121,7 @@ h3 {
   }
 
   #search-input {
-    width: 80vw;
+    width: 50vw;
     font-size: small;
   }
 
@@ -134,7 +134,7 @@ h3 {
     padding: 1rem 2rem;
     top: 100%; 
     transform: translate(-50%, -100%);
-    font-size: small
+    font-size: x-small
   }
 
   .line {
