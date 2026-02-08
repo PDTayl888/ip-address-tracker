@@ -39,5 +39,9 @@ searchButton.addEventListener('click', () => {
         document.getElementById('timezone-display').innerText = `UTC ${data.location.timezone}`;
         document.getElementById('isp-display').innerText = data.isp;
 
+        map.setView([data.location.lat, data.location.lng], 13);
+        marker.setLatLng([data.location.lat, data.location.lng]);
+
+
     })
 })
