@@ -72,7 +72,12 @@ ipForm.addEventListener('submit', (e) => {
     console.log("FORM SUBMITTTTTTTTEEEEDDDDDDD");
 
     const data = new FormData(e.target);
-    const ipInput = data.get('ip-input');
+    const ipInput = data.get('ip-input').trim();
+    if (isValidIP(ipInput)) {
+        updateUI(ipInput);
+    } else {
+        errorOverlay.classList.remove('hidden');
+    }
+});
 
-    updateUI(ipInput);
-})
+updateUI();
