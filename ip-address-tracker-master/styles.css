@@ -34,7 +34,7 @@
   width: 400px;
 }
 
-#search-btn {
+.search-button {
   background-color: black;
   color: white;
   padding: 15px 20px;
