@@ -27,8 +27,9 @@
   <h1 id="title">IP Address Tracker</h1>
   <form id="ip-form" novalidate>
     <div class="search-container">
+      <label for="search-input" class="sr-only">Search for any IP address or domain</label>
       <input type="text" id="search-input" name="ip-input" placeholder="Search for any IP address or domain">
-      <button id="search-button" class="search-button">
+      <button type="submit" id="search-button" class="search-button" aria-label="Submit search">
         <img src="./images/icon-arrow.svg" alt="Search">
       </button>
     </div>
@@ -42,41 +43,41 @@
 </header>
 
  
-<section class="info-card">
+<section class="info-card" aria-live="polite">
     <div class="info-item">
       <p>IP ADDRESS</p>
-      <h3 id="ip-display">192.212.174.101</h3>
+      <h3 id="ip-display"></h3>
     </div>
     <span class="line"></span>
 
     <div class="info-item">
       <p>Location</p>
-      <h3 id="location-display">Brooklyn,</h3>
+      <h3 id="location-display"></h3>
     </div>
         <span class="line"></span>
 
 
     <div class="info-item">
       <p>Timezone</p>
-      <h3 id="timezone-display">UTC -05;00</h3>
+      <h3 id="timezone-display"></h3>
     </div>
         <span class="line"></span>
 
 
     <div class="info-item">
       <p>ISP</p>
-      <h3 id="isp-display">SpaceX Starlink</h3>
+      <h3 id="isp-display"></h3>
     </div>
 </section>
   
 <section class="map-section">
-  <div id="map"></div>
+  <div id="map" role="region" aria-label="Interactive map showing IP location"></div>
 </section>
 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Patrick Taylor</a>.
   </div>
 </body>
 </html>
