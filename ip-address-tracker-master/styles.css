@@ -76,7 +76,12 @@ h3 {
   width: 400px;
 }
 
-.search-button {
+.search-button:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+
+.search-button{
   display: inline-flex;
   align-items: center;
   justify-content: center;
