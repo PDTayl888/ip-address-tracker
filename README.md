@@ -1,6 +1,6 @@
 This project is a map that tracks and provides info about any IP address entered in the input field. It displays the IP address itself, the postal address it is located at, the timezone and also the internet service providing it. The map will provide a marker indicating the location the IP address and load at said marker. Although the user is free to zoom in and out and explore any location on the map by scrolling. When the page initially loads you will see the location and info for the IP address of the device in use. Try it now at the link below!
 
-https://per-scholas-ip-project-patrick-taylor.netlify.app/
+https://patrick-per-scholas-ip-project.netlify.app/
 
 ![alt text](image.png)
 ![alt text](image-1.png)
