@@ -2,10 +2,10 @@ This project is a map that tracks and provides info about any IP address entered
 
 https://per-scholas-ip-project-patrick-taylor.netlify.app/
 
-
+![alt text](image.png)
 ![alt text](image-1.png)
 
-![alt text](image-2.png)
+
 
 
 
